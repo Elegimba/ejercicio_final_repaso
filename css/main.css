@@ -30,8 +30,6 @@ main section {
         }
     }
 
-
-
     div.column {
         padding: var(--gap);
         text-align: center;
@@ -46,5 +44,27 @@ main section {
         color: var(--text-color);
         line-height: 1.5rem;
         margin-bottom: var(--gap);
+    }
+}
+
+#calltoaction {
+    background-image: url(../images/qt-bg.jpg);
+    padding: 5rem 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: white;
+
+    blockquote {
+        font-style: italic;
+        font-family: var(secondary-font);
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: var(--gap);
+    }
+
+    author {
+        font-size: 1.2rem;
     }
 }
