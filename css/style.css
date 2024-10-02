@@ -6,6 +6,7 @@
 @import url(layout.css);
 @import url(header.css);
 @import url(footer.css);
+@import url(hero.css);
 
 /* La mediaqueries SIEMPRE la última */
 @import url(mediaqueries.css);
