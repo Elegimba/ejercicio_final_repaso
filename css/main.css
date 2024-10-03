@@ -68,3 +68,46 @@ main section {
         font-size: 1.2rem;
     }
 }
+
+#menu {
+    padding: 1.25rem;
+
+    h2 {
+        margin-bottom: 2.25rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--gap);
+
+        article {
+            position: relative;
+            /* Con "overflow: hidden; , en este caso, todo lo que se encuentre fuera de la imagen no se verá" */
+            overflow: hidden;
+
+            &:hover .content {
+                transform: translateY(-5.375rem)
+            }
+
+            .content {
+                position: absolute;
+                width: 100%;
+                background-color: var(--primary-color);
+                color: white;
+                padding: 0.625rem;
+                transition: 0.5s;
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 0.625rem;
+                }
+
+                p {
+                    font-size: 2rem;
+                    font-family: var(--secondary-font);
+                }
+            }
+        }
+    }
+}

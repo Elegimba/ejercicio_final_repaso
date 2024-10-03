@@ -1,3 +1,9 @@
+@media(width>=48rem) {
+    #menu .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (width>=62rem) {
     header .hamburger {
         display: none;
@@ -21,4 +27,13 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+        /* Los platos lleva un 768px de mediaqueris entremedias antes del otro mediaqueris de 62rem */
+    #menu .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+
+
+
